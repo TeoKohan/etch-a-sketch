@@ -1,0 +1,29 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board {
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: stretch;
+}
+
+.row {
+    flex: 1;
+    display: flex;
+    justify-items: stretch;
+}
+
+.cell {
+    flex: 1;
+    border: 1px solid black;
+}
