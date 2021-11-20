@@ -1,9 +1,17 @@
 * {
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0px;
     margin: 0px;
 }
 
 body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reset {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,4 +34,24 @@ body {
 .cell {
     flex: 1;
     border: 1px solid black;
+    border-radius: 1px;
+    background-color: #eeeeee;
+    box-shadow: inset 0px 0px 4px gray ;
+    transition: 0.3s ease;
+}
+
+.cell:hover{
+    border:1px solid green;
+}
+
+.painted {
+    background-color: gray;
+    box-shadow: inset 0px 0px 5px black ;
+}
+
+button {
+    width: 256px;
+    height: 64px;
+    font-size: 24px;
+    border: none;
 }
